@@ -33,11 +33,11 @@
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">P</span><span class="mainl02">YTHON</span></th>
+					<th bgcolor="#d5d5d5"><span class="mainl01">P</span><span class="mainl02">YTHON|</span></th>
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">O</span><span class="mainl02">ACLE</span></th>
+					<th bgcolor="#d5d5d5"><span class="mainl01">O</span><span class="mainl02">RACLE</span></th>
 				</tr>
 				
 				<tr>

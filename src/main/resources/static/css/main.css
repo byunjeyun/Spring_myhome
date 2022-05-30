@@ -15,14 +15,15 @@ span.main02{
 }
 
 span.mainl01{
-	font-size: 52px;
+	font-size: 48px;
 	color: #ffffff;
 	font-family: Arial;
 	font-weight: normal;
+	text-align: center;
 }
 
 span.mainl02{
-	font-size: 34px;
+	font-size: 32px;
 	color: #544950;
 	font-family: Arial;
 	font-weight: normal;	
