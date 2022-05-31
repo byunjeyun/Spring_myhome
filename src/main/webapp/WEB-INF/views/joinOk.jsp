@@ -18,11 +18,23 @@
 	<table width="70%" border="0" cellspacing="0" cellpadding="20">
 		<tr height="500">
 			<td bgcolor="d5d5d5" align="center">
+				<%
+					int checkId = Integer.parseInt(request.getAttribute("checkId").toString());
+					if(checkId == 1) {
+				%>
+				<script type="text/javascript">
+					alert("입력하신 아이디는 이미 사용중 입니다!. 다른 아이디를 입력하세요.");
+					history.go(-1);
+					reg_frm.mid.focus();
+				</script>
+				<%
+					}
+				%>
+										
 				<span class="content01"> 
-				안녕하세요. Developer 변재윤의 프로필 홈페이지 입니다.<br>
-				보시고 계신 페이지는 Spring Boot Framework으로 개발 되었습니다.<br>
-					
-			 
+				${mname } 님 회원가입을 축하 드립니다.<br>
+				가입한 ID는 ${mid}입니다.
+				 
 				</span>
 			</td>		
 		</tr>

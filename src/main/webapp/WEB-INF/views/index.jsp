@@ -33,7 +33,7 @@
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">P</span><span class="mainl02">YTHON|</span></th>
+					<th bgcolor="#d5d5d5"><span class="mainl01">P</span><span class="mainl02">YTHON</span></th>
 				</tr>
 				
 				<tr>
@@ -45,7 +45,7 @@
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">J</span><span class="mainl02">AVA</span></th>
+					<th bgcolor="#d5d5d5"><span class="mainl01">A</span><span class="mainl02">DsP</span></th>
 				</tr>
 				
 				<tr>
