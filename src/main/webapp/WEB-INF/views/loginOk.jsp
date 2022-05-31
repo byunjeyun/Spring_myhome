@@ -39,7 +39,10 @@
 				</script>
 				
 				<%					
+					}else{
+						session.setAttribute("ValidMem", "yes");
 					}
+					
 				%>
 										
 				<span class="content01"> 

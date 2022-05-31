@@ -128,6 +128,36 @@ public class WebController {
 		return "loginOk";
 	}
 
+	@RequestMapping(value = "/logout")
+	public String logout(HttpSession session) {
+		
+		session.invalidate();
+		
+		return "login";
+				
+	}
 	
+	@RequestMapping(value = "/infoModify")
+	public String infomodify(HttpServletRequest request, Model model) {
+	
+		HttpSession session = request.getSession();
+		String sessionId = (String)session.getAttribute("id");
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		MemberDto memberDto = dao.loginInfoDao(sessionId); 
+		
+		model.addAttribute("memberDto", memberDto);
+		
+		return "infoModify";
+				
+	}
+	
+	@RequestMapping(value = "/infoModifyOk")
+	public String infomodifyOk() {
+					
+		return "index";
+				
+	}
 	
 }

@@ -26,7 +26,7 @@
 		<tr>
 			<table width="70%" border="0" cellspacing="0" cellpadding="10">
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">J</span><span class="mainl02">AVA</span></th>
+					<th bgcolor="#c5ebd9"><span class="mainl01">J</span><span class="mainl02">AVA</span></th>
 					<td rowspan="6" bgcolor="#353535">
 					<img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/main.jpg">
 					</td>
@@ -37,7 +37,7 @@
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">O</span><span class="mainl02">RACLE</span></th>
+					<th bgcolor="#c5ebd9"><span class="mainl01">O</span><span class="mainl02">RACLE</span></th>
 				</tr>
 				
 				<tr>
@@ -45,7 +45,7 @@
 				</tr>
 				
 				<tr>
-					<th bgcolor="#d5d5d5"><span class="mainl01">A</span><span class="mainl02">DsP</span></th>
+					<th bgcolor="#c5ebd9"><span class="mainl01">A</span><span class="mainl02">DsP</span></th>
 				</tr>
 				
 				<tr>

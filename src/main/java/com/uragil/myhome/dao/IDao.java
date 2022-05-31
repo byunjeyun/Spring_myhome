@@ -13,7 +13,7 @@ public interface IDao {
 	
 	public MemberDto loginInfoDao(String mid);//로그인한 회원의 모든 정보를 DB에서 가져옴
 	
-	
+	public void infoModify(String mpw, String mname, String memail, String mid);
 	//board_Dao
 	
 }

@@ -13,8 +13,33 @@
 		<tr height="50" bgcolor="000000">
 			<td width="70%">&nbsp;</td>
 			<td width="5%" class="menu01"><a href="/">HOME</a></td>
-			<td width="5%" class="menu01"><a href="/login">Login</a></td>
-			<td width="5%" class="menu01"><a href="/join">Join</a></td>
+			<td width="5%" class="menu01">		
+			<%
+				String sessionValid = (String) session.getAttribute("id");
+				if(sessionValid == null){
+			%>
+			<a href="login">Login</a>
+			<%
+			}else{
+			%>
+			<a href="logout">Logout</a></td>
+			<%
+			}
+			%>
+								
+			<td width="5%" class="menu01">
+			<%
+				if(sessionValid == null){
+			%>
+			<a href="join">Join</a>
+			<%
+			}else{
+			%>
+			<a href="infoModify">Modify</td>
+			<%
+			}
+			%>
+						
 			<td width="5%" class="menu01"><a href="/profile">Profile</a></td>
 			<td width="5%" class="menu01"><a href="/question">Question</a></td>
 			<td width="5%" class="menu01"><a href="/contact">Contact</a></td>
@@ -25,5 +50,8 @@
 		</tr>
 					
 	</table>
+	
+	
+
 </body>
 </html>
