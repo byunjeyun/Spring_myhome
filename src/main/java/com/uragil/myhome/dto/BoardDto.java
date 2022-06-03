@@ -7,6 +7,7 @@ public class BoardDto {
 	private String qid;
 	private String qname;
 	private String qcontent;
+	private String qemail;
 	private String qdate;
 	
 	
@@ -22,6 +23,7 @@ public class BoardDto {
 		this.qid = qid;
 		this.qname = qname;
 		this.qcontent = qcontent;
+		this.qemail = qemail;
 		this.qdate = qdate;
 	}
 
@@ -65,6 +67,15 @@ public class BoardDto {
 		this.qcontent = qcontent;
 	}
 
+
+	public String getQemail() {
+		return qemail;
+	}
+
+
+	public void setQemail(String qemail) {
+		this.qemail = qemail;
+	}
 
 	public String getQdate() {
 		return qdate;

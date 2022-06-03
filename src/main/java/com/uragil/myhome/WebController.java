@@ -1,5 +1,7 @@
 package com.uragil.myhome;
 
+import java.util.ArrayList;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.uragil.myhome.dao.IDao;
+import com.uragil.myhome.dto.BoardDto;
 import com.uragil.myhome.dto.MemberDto;
 
 @Controller
@@ -83,6 +86,7 @@ public class WebController {
 			HttpSession session = request.getSession();
 			
 			session.setAttribute("id", mid);
+			session.setAttribute("name", mname);
 			
 			model.addAttribute("mname", mname);
 			model.addAttribute("mid", mid);
@@ -138,26 +142,99 @@ public class WebController {
 	}
 	
 	@RequestMapping(value = "/infoModify")
-	public String infomodify(HttpServletRequest request, Model model) {
-	
+	public String infoModify(HttpServletRequest request, Model model) {
+		
 		HttpSession session = request.getSession();
-		String sessionId = (String)session.getAttribute("id");
+		
+		String sessionId = (String) session.getAttribute("id");
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
 		
-		MemberDto memberDto = dao.loginInfoDao(sessionId); 
+		MemberDto memberDto = dao.loginInfoDao(sessionId);
 		
-		model.addAttribute("memberDto", memberDto);
+		model.addAttribute("memberDto", memberDto);		
 		
 		return "infoModify";
-				
 	}
 	
 	@RequestMapping(value = "/infoModifyOk")
-	public String infomodifyOk() {
-					
-		return "index";
-				
+	public String infoModifyOk(HttpServletRequest request, Model model) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		dao.infoModify(request.getParameter("mpw"), request.getParameter("mname"), request.getParameter("memail"), request.getParameter("mid"));
+		
+		MemberDto memberDto = dao.loginInfoDao(request.getParameter("mid"));
+		
+		model.addAttribute("memberDto", memberDto);
+		
+		return "infoModifyOk";
 	}
 	
+	@RequestMapping(value = "/write")
+	public String write(HttpServletRequest request) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		dao.writeDao(request.getParameter("qid"),request.getParameter("qname"),request.getParameter("qcontent"),request.getParameter("qemail"));
+		
+		return "redirect:list";
+	}
+	
+	
+	@RequestMapping(value ="/list")
+	public String list(Model model) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		ArrayList<BoardDto> boardDtos = dao.listDao();
+		
+		model.addAttribute("qlist", boardDtos);
+		
+		return "list";
+	}
+			
+	@RequestMapping(value = "/qview")
+	public String qview(HttpServletRequest request, Model model) {
+		
+		String qnum = request.getParameter("qnum");
+		IDao dao = sqlSession.getMapper(IDao.class);
+		BoardDto boardDto = dao.viewDao(qnum);
+		
+		model.addAttribute("boardDto", boardDto);
+		model.addAttribute("boardId", boardDto.getQid());
+		
+		return "qview";
+	}
+	
+	@RequestMapping(value = "/boardModify")
+	public String boardModify(HttpServletRequest request) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		String qnum = request.getParameter("qnum");
+		String qname = request.getParameter("qname");
+		String qcontent = request.getParameter("qcontent");
+		String qemail = request.getParameter("qemail");
+		
+		dao.boardModify(qname, qcontent, qemail, qnum);
+		
+		return "redirect:list";
+	}
+	
+	@RequestMapping(value = "/delete")
+	public String delete(HttpServletRequest request) {
+		
+		String qnum = request.getParameter("qnum");
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		dao.deleteDao(qnum);
+		
+		return "redirect:list";	
+	}
+		
 }
+
+	
+	

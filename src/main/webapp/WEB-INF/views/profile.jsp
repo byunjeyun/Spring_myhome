@@ -15,9 +15,9 @@
 	<%@ include file="include/header.jsp" %>
 
 	<center>	
-	<table width="70%" border="0" cellspacing="0" cellpadding="20">
-		<tr height="500">
-			<td bgcolor="d5d5d5" align="center">
+	<table width="70%" border="0" cellspacing="0" cellpadding="10">
+		<tr height="530">
+			<td bgcolor="#bbbbbb" align="center">
 				<span class="content01"> 
 				안녕하세요. Developer 변재윤의 프로필 홈페이지 입니다.<br>
 				보시고 계신 페이지는 Spring Boot Framework으로 개발 되었습니다.<br>

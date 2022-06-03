@@ -12,17 +12,17 @@
 	<table width="100%" cellspacing="0" cellpadding="0">
 		<tr height="50" bgcolor="000000">
 			<td width="70%">&nbsp;</td>
-			<td width="5%" class="menu01"><a href="/">HOME</a></td>
+			<td width="5%" class="menu01"><a href="/">Home|</a></td>
 			<td width="5%" class="menu01">		
 			<%
 				String sessionValid = (String) session.getAttribute("id");
 				if(sessionValid == null){
 			%>
-			<a href="login">Login</a>
+			<a href="login">Login|</a>
 			<%
 			}else{
 			%>
-			<a href="logout">Logout</a></td>
+			<a href="logout">Logout|</a></td>
 			<%
 			}
 			%>
@@ -31,17 +31,17 @@
 			<%
 				if(sessionValid == null){
 			%>
-			<a href="join">Join</a>
+			<a href="join">Join|</a>
 			<%
 			}else{
 			%>
-			<a href="infoModify">Modify</td>
+			<a href="infoModify">Modify|</td>
 			<%
 			}
 			%>
 						
-			<td width="5%" class="menu01"><a href="/profile">Profile</a></td>
-			<td width="5%" class="menu01"><a href="/question">Question</a></td>
+			<td width="5%" class="menu01"><a href="/profile">Profile|</a></td>
+			<td width="5%" class="menu01"><a href="/question">Question|</a></td>
 			<td width="5%" class="menu01"><a href="/contact">Contact</a></td>
 		</tr>
 		

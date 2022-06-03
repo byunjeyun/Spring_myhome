@@ -18,7 +18,7 @@
 	<%@ include file="include/header.jsp" %>
 
 	<center>	
-	<table width="75%" border="0" cellspacing="0" cellpadding="10">
+	<table width="70%" border="0" cellspacing="0" cellpadding="10">
 		<tr height="530">
 			<td bgcolor="#bbbbbb" align="center" height="500">
 				<form action="joinOk" method="post" name="reg_frm">
