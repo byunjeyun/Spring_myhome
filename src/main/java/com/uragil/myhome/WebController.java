@@ -233,7 +233,34 @@ public class WebController {
 		
 		return "redirect:list";	
 	}
+	
+	
+	@RequestMapping(value ="/memberInfo")
+	public String memberInfo(Model model) {
 		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		ArrayList<MemberDto> memberDtos = dao.memberDao();
+		
+		model.addAttribute("mlist", memberDtos);
+		
+		return "memberInfo";
+	}
+	
+		
+	@RequestMapping(value = "/deleteMem")
+	public String deleteMem(HttpServletRequest request) {
+		
+		String mid = request.getParameter("mid");
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		dao.deleteMemDao(mid);
+		
+		
+		return "redirect:logout";	
+	}
+	
 }
 
 	

@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
 span.text01{
-	font-size: 18x;
+	font-size: 18px;
 	color: #c5ebd9;
 	font-family: sans-serif;
 	font-weight: bold;
 }
 
 span.text02{
-	font-size: 18x;
+	font-size: 18px;
 	color: #ffffff;
 	font-family: sans-serif;
 	font-weight: bold;
 }
 
 span.text03{
-	font-size: 18x;
-	color: #c1ee28;
+	font-size: 18px;
+	color: #e13c8e;
 	font-family: sans-serif;
 	font-weight: bold;
 }
@@ -24,7 +24,7 @@ span.text03{
 
 input.type01{
 	
-	border: 2px solid #c5ebd9;
+	border: 2px solid ;
 	background-color: #ffffff;
 	width : 220px;
 	padding:5px; 
@@ -54,6 +54,36 @@ input.button01:hover {
 
 
 #textarea01{
+	border: 2px solid #c8e0e8;
+	background-color: #ffffff;
+	width : 220px;
+	padding:5px; 
+	font-family: Arial;
+	font-size: 14px	
+}
+
+
+input.button02{
+	border:2px solid #ffffff;
+	background-color: #ff80c0;
+	width : 109px;
+	
+	padding: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	font-family: malgun;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+input.button02:hover {
+  background-color: #ff0080;
+  color: white;
+}
+
+
+#textarea02{
 	border: 2px solid #c8e0e8;
 	background-color: #ffffff;
 	width : 220px;

@@ -28,33 +28,24 @@
 		</tr>
 					<table border="0" cellspacing="0" cellpadding="10">
 							<tr>
-								<td class="board01">NO</td>
-								<td class="board01">ID</td>
-								<td class="board01" width="500">QUESTION</td>
+							<td class="board01">ID</td>
 								<td class="board01">NAME</td>
 								<td class="board01">DATE</td>
+								<td class="board01">EMAIL</td>
+								<td class="board01">관리</td>
 							</tr>
-							<c:forEach items="${qlist }" var="qdto">
+							<c:forEach items="${mlist }" var="mdto">
 							<tr>
-								<td class="board02">${qdto.qnum }</td>
-								<td class="board02">${qdto.qid }</td>
-								<td class="board03">
-								<a href="qview?qnum=${qdto.qnum }">
-									<c:choose>
-										<c:when test="${fn:length(qdto.qcontent) > 26}">
-											<c:out value="${fn:substring(qdto.qcontent,0,25) }" /> ......
-										</c:when> 
-										<c:otherwise>
-											<c:out value="${qdto.qcontent}" />
-										</c:otherwise>
-									</c:choose>
-								</a>
-								</td>
-								<td class="board02">${qdto.qname }</td>
+								<td class="board02">${mdto.mid }</td>
+								<td class="board02">${mdto.mname }</td>
 								<td class="board02">
-									<c:out value="${fn:substring(qdto.qdate,0,16) }" /> 
+								<c:out value="${fn:substring(mdto.mdate,0,16) }" /> 
 								</td>
-							</tr>
+								<td class="board02">${mdto.memail }</td>
+								<td class="board02">
+									<input class="button02" type="button" value="회원삭제" onclick="location.href='deleteMem?mid=${mdto.mid}'">&nbsp;&nbsp;
+								</td>
+								</tr>
 							</c:forEach>
 							<tr>
 								<td colspan="5" align="right">

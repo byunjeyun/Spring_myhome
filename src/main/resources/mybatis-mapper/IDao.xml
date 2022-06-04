@@ -34,8 +34,13 @@
 		UPDATE q_member SET mpw=#{param1}, mname=#{param2}, memail=#{param3} WHERE mid=#{param4} 	
 	</update>
 	
+	<select id="memberDao" resultType="com.uragil.myhome.dto.MemberDto">
+		SELECT * FROM q_member ORDER BY mid DESC	
+	</select>
 	
-	
+	<delete id="deleteMemDao">
+		DELETE FROM q_member WHERE mid = #{param1}	
+	</delete>
 	
 	
 	<!-- board SQL -->

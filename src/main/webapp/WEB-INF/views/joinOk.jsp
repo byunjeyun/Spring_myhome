@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
 <title>Byun's Profile web</title>
 
 
@@ -32,10 +33,8 @@
 				%>
 										
 				<span class="content01"> 
-				${mname } 님 회원가입을 축하 드립니다.<br>
-				가입한 ID는 ${mid}입니다.
-				 
-				</span>
+				'${mname }' 님 회원가입을 축하 드립니다.<br>
+				가입한 ID는</span> <span class="text03">'${mid}' </span> 입니다.
 			</td>		
 		</tr>
 	</table>

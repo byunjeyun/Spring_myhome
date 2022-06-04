@@ -81,6 +81,7 @@
 						
 						<tr>
 							<td colspan="2"  align="right">
+								<input class="button02" type="button" value="회원탈퇴" onclick="location.href='deleteMem?mid=${memberDto.mid}'">&nbsp;&nbsp;
 								<input class="button01" type="button" value="정보수정" onclick="joinCheck()">&nbsp;&nbsp;	
 								<input class="button01" type="button" value="취소" onclick="location.href='index'">
 							</td>

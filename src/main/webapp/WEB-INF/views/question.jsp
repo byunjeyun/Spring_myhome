@@ -37,7 +37,7 @@
 									<span class="text01">NAME :</span>
 							</td>
 							<td>
-								<input class="type01" type="text" name="qname" value="<% if(session.getAttribute("name") != null) { out.print(session.getAttribute("name")); } else { out.print("우라질");} %>" readonly>
+								<input class="type01" type="text" name="qname" value="<% if(session.getAttribute("name") != null) { out.print(session.getAttribute("name")); } else { out.print("누구");} %>" readonly>
 							</td>
 						</tr>
 						

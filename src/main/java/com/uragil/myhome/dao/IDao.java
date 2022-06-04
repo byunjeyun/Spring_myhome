@@ -18,8 +18,9 @@ public interface IDao {
 	
 	public void infoModify(String mpw, String mname, String memail, String mid);
 
+	public ArrayList<MemberDto> memberDao();//리스트 가져오기	
 	
-	
+	public void deleteMemDao(String mid); //글 삭제
 	
 	//board_Dao
 	public void writeDao(String qid, String qname, String qcontent, String qemail);//글쓰기
@@ -27,7 +28,12 @@ public interface IDao {
 	public ArrayList<BoardDto> listDao();//리스트 가져오기
 	
 	public BoardDto viewDao(String qnum);//글 가져오기
+	
 	public void boardModify(String qname, String qcontent, String qemail, String qnum); //글수정하기
+	
 	public void deleteDao(String qnum); //글 삭제
+	
+	
+	
 	
 }
