@@ -30,7 +30,7 @@
 							<tr>
 								<td class="board01">NO</td>
 								<td class="board01">ID</td>
-								<td class="board01" width="500">QUESTION</td>
+								<td class="board01" width="450">QUESTION</td>
 								<td class="board01">NAME</td>
 								<td class="board01">DATE</td>
 							</tr>

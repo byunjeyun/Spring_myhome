@@ -37,7 +37,7 @@
 									<span class="text01">NAME :</span>
 							</td>
 							<td>
-								<input class="type01" type="text" name="qname" value="<% if(session.getAttribute("name") != null) { out.print(session.getAttribute("name")); } else { out.print("누구");} %>" readonly>
+								<input class="type01" type="text" name="qname" value="<% if(session.getAttribute("name") != null) { out.print(session.getAttribute("name")); } else { out.print("누구");} %>">
 							</td>
 						</tr>
 						
@@ -61,7 +61,7 @@
 						
 						<tr>
 							<td colspan="2"  align="right">
-								<input class="button01" type="button" value="글쓰기" onclick="boardConfirm()">&nbsp;&nbsp;
+								<input class="button01" type="button" value="작성" onclick="boardConfirm()">&nbsp;&nbsp;
 									<input class="button01" type="button" value="글목록" onclick="location.href='list'">
 							</td>
 						</tr>					

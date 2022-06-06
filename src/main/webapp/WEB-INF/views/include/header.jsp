@@ -5,15 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/menu.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/header.css">
 <title>Insert title here</title>
 </head>
 
 <body>
 	<table width="100%" cellspacing="0" cellpadding="0">
 		<tr height="50" bgcolor="000000">
-			<td width="70%">&nbsp;</td>
-			<td width="5%" class="menu01"><a href="/">Home|</a></td>
-			<td width="5%" class="menu01">		
+			<td width="70%" >&nbsp;</td>
+			<td width="5%" class="header01"><a href="/">Home|</a></td>
+			<td width="5%" class="header01">		
 			<%
 				String sessionValid = (String) session.getAttribute("id");
 				if(sessionValid == null){
@@ -27,7 +28,7 @@
 			}
 			%>
 								
-			<td width="5%" class="menu01">
+			<td width="5%" class="header01">
 			<%
 				if(sessionValid == null){
 			%>
@@ -40,9 +41,9 @@
 			}
 			%>
 						
-			<td width="5%" class="menu01"><a href="/profile">Profile|</a></td>
-			<td width="5%" class="menu01"><a href="/question">Question|</a></td>
-			<td width="5%" class="menu01"><a href="/contact">Contact</a></td>
+			<td width="5%" class="header01"><a href="/profile">Profile|</a></td>
+			<td width="5%" class="header01"><a href="/question">Question|</a></td>
+			<td width="5%" class="header01"><a href="/contact">Contact</a></td>
 		</tr>
 		
 		<tr height="50">
