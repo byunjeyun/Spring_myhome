@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css?after">
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/board.js"></script>
 <title>Byun's Profile web</title>
 
@@ -19,10 +19,10 @@
 	<center>	
 	<table width="70%" border="0" cellspacing="0" cellpadding="10">
 		<tr height="530">
-			<td bgcolor="#bbbbbb" align="center" height="500">
+			<td bgcolor="#bbb" align="center" height="500">
 				<table>
 				<form action="write" method="post" name="question_frm">
-					<table bgcolor="#333333" height="120" width="400" cellspacing="10px">
+					<table bgcolor="#112" height="120" width="400" cellspacing="10px">
 						<tr align="right" >
 							<td>
 								<span class="text01">ID :</span>
@@ -61,7 +61,7 @@
 						
 						<tr>
 							<td colspan="2"  align="right">
-								<input class="button01" type="button" value="작성" onclick="boardConfirm()">&nbsp;&nbsp;
+								<input class="button01" type="button" value="글작성" onclick="boardConfirm()">&nbsp;&nbsp;
 									<input class="button01" type="button" value="글목록" onclick="location.href='list'">
 							</td>
 						</tr>					

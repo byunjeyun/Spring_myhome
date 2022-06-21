@@ -19,8 +19,10 @@
 		<tr height="530">
 			<td bgcolor="d5d5d5" align="center">
 				<span class="content01"> 
-				안녕하세요. 변재윤 입니다. 홈페이지에 방문해 주셔서 감사합니다.<br>			<a href="/question"></a><br>
-				추가로 필요한 부분은 <a href="mailto:uragiljay@gmail.com">uragiljay@gmail.com</a>으로 연락 바랍니다. 
+				안녕하세요. 변재윤 입니다. 홈페이지에 방문해 주셔서 감사합니다.<br>
+				궁금하신 점은 <a href="question">질문글 남기기</a> 혹은 
+				<a href="">uragiljay@gmail.com</a>으로 연락 바랍니다.<br>
+				<a href="https://uragil-jay.tistory.com/">블로그</a> 방문도 환영합니다..<br> 
 					
 			 
 				</span>

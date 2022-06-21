@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css?after">
 <title>Byun's Profile web</title>
 
 
@@ -21,7 +21,7 @@
 			<td bgcolor="#bbbbbb" align="center" height="500">
 				<table>
 				<form action="loginOk" method="post">
-					<table bgcolor="#333333" height="120" width="400" cellspacing="10px">
+					<table bgcolor="#112" height="120" width="400" cellspacing="10px">
 						<tr align="right" >
 							<td>
 								<span class="text01">MEMBER ID :</span>

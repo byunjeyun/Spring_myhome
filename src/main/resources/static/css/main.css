@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 span.main01{
-	font-size: 60px;
-	color: #262731;
-	font-family: Arial;
+	font-size: 50px;
+	color: #122;
+	font-family: sans-serif;
 	font-weight: bold;
 }
 
@@ -14,18 +14,18 @@ span.main02{
 	font-weight: normal;
 }
 
-span.mainl01{
+span.main03{
 	font-size: 48px;
 	color: #ffffff;
-	font-family: Arial;
+	font-family: sans-serif;
 	font-weight: normal;
 	text-align: center;
 }
 
-span.mainl02{
+span.main04{
 	font-size: 32px;
-	color: #544950;
-	font-family: Arial;
+	color: #bacada;
+	font-family: monospace;
 	font-weight: normal;
 	
 }

@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
 span.text01{
-	font-size: 18px;
-	color: #c5ebd9;
+	font-size: 18x;
+	color: #fff;
 	font-family: sans-serif;
 	font-weight: bold;
 }
 
 span.text02{
-	font-size: 18px;
+	font-size: 18x;
 	color: #ffffff;
 	font-family: sans-serif;
 	font-weight: bold;
 }
 
 span.text03{
-	font-size: 18px;
-	color: #e13c8e;
+	font-size: 18x;
+	color: #c1ee28;
 	font-family: sans-serif;
 	font-weight: bold;
 }
@@ -24,7 +24,7 @@ span.text03{
 
 input.type01{
 	
-	border: 2px solid ;
+	border: 2px solid #dfd;
 	background-color: #ffffff;
 	width : 220px;
 	padding:5px; 
@@ -34,22 +34,23 @@ input.type01{
 }
 
 input.button01{
-	border:2px solid #ffffff;
-	background-color: #c5ebd9;
+	
+	background-color: #4CAF50;
 	width : 109px;
 	
 	padding: 5px;
 	font-size: 14px;
 	font-weight: bold;
-	color: #333333;
+	color: #dfd;
 	font-family: malgun;
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
 
 input.button01:hover {
-  background-color: #4CAF50;
-  color: white;
+	border:2px solid #ffffff;
+  background-color: #1d8322;
+  color: #fff;
 }
 
 
@@ -64,20 +65,21 @@ input.button01:hover {
 
 
 input.button02{
-	border:2px solid #ffffff;
+	
 	background-color: #ff80c0;
 	width : 109px;
 	
 	padding: 5px;
 	font-size: 14px;
 	font-weight: bold;
-	color: #333333;
+	color: #fdd;
 	font-family: malgun;
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
 
 input.button02:hover {
+  border:2px solid #ffffff;
   background-color: #ff0080;
   color: white;
 }

@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/menu.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/header.css?after">
 </head>
 <body>
 	<table width="100%" BORDER="0" cellspacing="0" cellpadding="0">
@@ -12,16 +14,19 @@
 			<td>&nbsp;</td>
 		</tr>
 		
-		<tr bgcolor="#000000">
-			<td class="menu02" align="center">Copyright ⓒ Uragil_Byun. All Rights Reserved</td>
+		<tr >
+			<td class="footer01" align="center">Copyright ⓒ Uragil_Byun. All Rights Reserved</td>
 		</tr>
-
-		<tr bgcolor="#000000">
-			<td class="menu02" align="center">This homepage is built with Spring Framework. Made by jaeyun Byun. E-Mail: <a href="mailto:uragiljay@gmail.com">uragiljay@gmail.com</a></td>
-			
+		<tr >
+			<td class="footer01"align="center">This homepage is built with Spring Framework. Made by jaeyun Byun. 
+			</td>
 		</tr>
-
-
+		
+		<tr >
+			<td class="footer01" align="center"> E-Mail: <a href="mailto:uragiljay@gmail.com">uragiljay@gmail.com</a>
+			| <a href="https://uragil-jay.tistory.com/" target="blank">Blog : uragil-jay.tistory.com/</a>
+			</td>
+		</tr>
 
 	</table>
 </body>

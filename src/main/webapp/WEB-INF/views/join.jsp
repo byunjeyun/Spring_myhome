@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css?after">
 
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/join.js"></script>
 <title>회원가입</title>
@@ -23,7 +23,7 @@
 			<td bgcolor="#bbbbbb" align="center" height="500">
 				<form action="joinOk" method="post" name="reg_frm">
 				<table>
-					<table bgcolor="#333333" height="120" width="400" cellspacing="10px">
+					<table bgcolor="#112" height="120" width="400" cellspacing="10px">
 					
 						<tr align="right" >
 							<td>
@@ -71,7 +71,7 @@
 						
 						<tr>
 							<td colspan="2"  align="right">
-								<input class="button01" type="button" value="회원가입" onclick="joinCheck()">&nbsp;&nbsp;	
+								<input class="button01" type="button" value="가입하기" onclick="joinCheck()">&nbsp;&nbsp;	
 								<input class="button01" type="button" value="로그인" onclick="location.href='login'">
 							</td>
 						</tr>

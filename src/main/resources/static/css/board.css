@@ -8,7 +8,7 @@ td.board01{
 	font-weight:bold;
 	border-top-style: solid;
 	border-color: #ffffff;
-	background-color: #555555;
+	background-color: #112;
 	text-align: center;
 	border-width: 1px;
 	
@@ -17,12 +17,12 @@ td.board01{
 td.board02{
 	
 	font-size: 14px;
-	color:#333333;
+	color:#ddd;
 	font-family: malgun;
 	font-weight:normal;
 	border-top-style: solid;
 	border-color: #ffffff;
-	background-color: #dddddd;
+	background-color: #797;
 	text-align: center;
 	border-width: 1px;
 	
@@ -36,7 +36,7 @@ td.board03{
 	font-weight:normal;
 	border-top-style: solid;
 	border-color: #ffffff;
-	background-color: #bbbbbb;
+	background-color: #797;
 	text-align: left;
 	border-width: 1px;
 	

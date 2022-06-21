@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css?after">
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/board.js"></script>
 <title>Byun's Profile web</title>
 
@@ -74,17 +74,18 @@
 									if(sessionId == null) {
 								
 								%>
-									<input class="button01" type="button" value="질문수정" onclick="modifyAlert()">&nbsp;&nbsp;
+									<input class="button01" type="button" value="수정" onclick="modifyAlert()">&nbsp;&nbsp;
 									
 								<%
 									} else if(sessionId.equals(boardId)) {
 								%>									
-									<input class="button01" type="submit" value="질문수정" >&nbsp;&nbsp;
-									<input class="button01" type="button" value="글삭제" onclick="location.href='delete?qnum=${boardDto.qnum}'">&nbsp;&nbsp;
+									<input class="button02" type="button" value="글삭제" onclick="location.href='delete?qnum=${boardDto.qnum}'">&nbsp;&nbsp;	
+									<input class="button01" type="submit" value="수정" >&nbsp;&nbsp;
+									
 								<%
 									} else {
 								%>
-									<input class="button01" type="button" value="질문수정" onclick="modifyAlert()">&nbsp;&nbsp;
+									<input class="button01" type="button" value="수정" onclick="modifyAlert()">&nbsp;&nbsp;
 								<%
 									}
 								%>									

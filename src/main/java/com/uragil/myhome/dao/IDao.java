@@ -2,6 +2,7 @@ package com.uragil.myhome.dao;
 
 import java.util.ArrayList;
 
+
 import com.uragil.myhome.dto.BoardDto;
 import com.uragil.myhome.dto.MemberDto;
 
@@ -33,7 +34,5 @@ public interface IDao {
 	
 	public void deleteDao(String qnum); //글 삭제
 	
-	
-	
-	
+
 }

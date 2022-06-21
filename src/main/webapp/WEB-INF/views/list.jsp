@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/board.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/content.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/main.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/member.css?after">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/board.css?after">
 <title>Byun's Profile web</title>
 
 
@@ -30,7 +30,7 @@
 							<tr>
 								<td class="board01">NO</td>
 								<td class="board01">ID</td>
-								<td class="board01" width="450">QUESTION</td>
+								<td class="board01" width="500">QUESTION</td>
 								<td class="board01">NAME</td>
 								<td class="board01">DATE</td>
 							</tr>
@@ -41,8 +41,8 @@
 								<td class="board03">
 								<a href="qview?qnum=${qdto.qnum }">
 									<c:choose>
-										<c:when test="${fn:length(qdto.qcontent) > 26}">
-											<c:out value="${fn:substring(qdto.qcontent,0,25) }" /> ......
+										<c:when test="${fn:length(qdto.qcontent) > 28}">
+											<c:out value="${fn:substring(qdto.qcontent,0,27) }" /> ......
 										</c:when> 
 										<c:otherwise>
 											<c:out value="${qdto.qcontent}" />
@@ -52,7 +52,7 @@
 								</td>
 								<td class="board02">${qdto.qname }</td>
 								<td class="board02">
-									<c:out value="${fn:substring(qdto.qdate,0,16) }" /> 
+									<c:out value="${fn:substring(qdto.qdate,5,16) }" /> 
 								</td>
 							</tr>
 							</c:forEach>
@@ -62,7 +62,7 @@
 							</td>
 						</tr>					
 					</table>
-
+				</form>
 			
 		</tr>
 	</table>
